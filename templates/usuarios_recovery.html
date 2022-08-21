@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="container">
+  	<ul>
+	{% for u in usuarios %}
+		<li> 
+				{{u.nome}} - 
+				<a href="/usuarios/update/{{u.id}}" class="editar">editar</a>  
+				<a href="/usuarios/delete/{{u.id}}" class="excluir">excluir</a>
+		</li>
+	{% endfor %}
+	</ul>
+</div>
+{% endblock %}

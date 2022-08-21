@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<div class="container">
+  <h1>EDITAR</h1>
+  <form action="/usuarios/update/{{usuario.id}}" method="POST">
+  Nome: <input type="text" name="nome" value="{{usuario.nome}}"><br/>
+  E-mail: <input type="email" name="email" value="{{usuario.email}}"><br/>
+  Senha: <input type="password" name="senha" value=""><br/>
+  Confirmar senha: <input type="password" name="csenha"><br/>
+  <input type="submit" name="Cadastrar" class='cadastrar'>
+  <input type="reset" name="Limpar" class='reset'>
+</form>
+</div>
+{% endblock %}

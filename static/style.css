@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+body{
+  background-image: linear-gradient(to right, #322f79, #030c30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+h1{
+  font-size: 25px;
+  color: #0f0f0f;
+  text-align: center;
+  margin-right: 1.5rem;
+}
+.container{
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  color: #0f0f0f;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  margin-left: 1rem;
+}
+input[type='text'], input[type='email'], input[type='password']{
+  border: none;
+  display: block;
+  padding: 8px;
+  background: transparent;
+  border-bottom: 1px solid #858585;
+  transition: 0.8s; 
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-bottom: 1px solid #322f79;
+    outline: 0;
+} 
+.cadastrar, .reset ,.editar, .excluir, .cancelar{
+  background: none;
+  padding: 0.5rem;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.cadastrar{
+  border: 2px solid #030c30;
+  color: #030c30;
+}
+.cadastrar:hover{
+  background: #030c30;
+  color: #fff;
+}
+.reset{
+  border: 2px solid #322f79;
+  color: #322f79;
+}
+.reset:hover{
+  background: #322f79;
+  color: #fff;
+}
+
+/* RECOVERY */
+
+ul, li{
+  list-style-type: none;
+}
+li{
+  padding: 1.2rem;
+  border-bottom: 1px solid #858585;
+}
+.excluir{
+  border: 2px solid #d60000;
+  color: #d60000;
+}
+.excluir:hover{
+  background: #d60000;
+  color: #fff;
+}
+.editar, .cancelar{
+  border: 2px solid #ffdd00;
+  color: #ffdd00;
+}
+.editar:hover, .cancelar:hover{
+  background: #ffdd00;
+  color: #fff;
+}
+.cancelar{
+  margin-left: 0.8rem;
+}
+/* DELETE */
+
+p{
+  color: #fff;
+}

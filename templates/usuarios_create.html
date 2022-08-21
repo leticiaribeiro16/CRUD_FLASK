@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<div class="container">
+  <h1>CRIAR</h1>
+  <form action="/usuarios/create" method="POST">
+    Nome: <input type="text" name="nome"><br/>
+    E-mail: <input type="email" name="email"><br/>
+    Senha: <input type="password" name="senha"><br/>
+    Confirmar senha: <input type="password" name="csenha"><br/>
+    <input type="submit" name="Cadastrar" class="cadastrar">
+    <input type="reset" name="Limpar" class="reset">
+  </form>
+</div>
+
+{% endblock %}
+
